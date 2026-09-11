@@ -5,18 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MOVE 2026 Workshop Programme</title>
 	<style>
-    a {
-        color: #0072c6;
-        text-decoration: none;
-        transition: all 0.2s ease;
-    }
+		a {
+			color: #0072c6;
+			text-decoration: none;
+			transition: all 0.2s ease;
+		}
 
-    a:hover {
-        color: #001a4d; /* darker blue */
-        text-decoration: underline;
-        text-shadow: 0 0 4px rgba(0, 114, 198, 0.5); /* subtle glow */
-    }
-	</style>
+		a:hover {
+			color: #001a4d;
+			text-decoration: underline;
+			text-shadow: 0 0 4px rgba(0, 114, 198, 0.5);
+		}
+
+		/* Programme tables */
+
+		.programme-table {
+			width: 100%;
+			border-collapse: collapse;
+			min-width: 800px;
+		}
+
+		.programme-table th {
+			padding: 10px;
+			text-align: left;
+		}
+
+		.programme-table td {
+			padding: 8px;
+		}
+
+		.paper-row.odd {
+			background: #fafafa;
+		}
+
+		.break-row {
+			background: #f0f0f0;
+			font-weight: bold;
+		}
+
+		.break-row:hover,
+		.paper-row:hover {
+			background: #eef6ff;
+		}
+</style>
 
 </head>
 
@@ -116,9 +147,8 @@ margin:15px 0;">
 
 <ul>
 <li>20 accepted research presentations.</li>
-<li>Keynote presentation by Simon Polovina.</li>
+<li>Keynote presentation by Simon Polovina</li>
 <li>Ronald Stamper Memorial Session.</li>
-<li>MOVE Framework Tutorial.</li>
 <li>Joint participation with the Organisational Semiotics community.</li>
 <li>Hybrid participation via Microsoft Teams.</li>
 <li>No registration fee.</li>
@@ -199,12 +229,12 @@ Workshop Programme
 <p><strong>Research Presentations</strong></p>
 
 <div style="overflow-x:auto;">
-<table style="width:100%; border-collapse:collapse; min-width:800px;">
+<table class="programme-table">
 <thead>
 <tr style="background:#003366; color:white;">
 <th style="padding:10px; text-align:left;">Start</th>
 <th style="padding:10px; text-align:left;">End</th>
-<th style="padding:10px; text-align:left;">Activity</th>
+<th style="width:60px; white-space:nowrap;">Activity</th>
 <th style="padding:10px; text-align:left;">Presenter</th>
 <th style="padding:10px; text-align:left;">Paper</th>
 </tr>
@@ -212,15 +242,16 @@ Workshop Programme
 
 <tbody>
 
-<tr style="background:#fafafa;">
+<tr class="paper-row odd">
 <td style="padding:8px;">09:15</td>
 <td>09:45</td>
 <td>Paper 1</td>
 <td>Marko Vitas</td>
-<td>A Possible Definitions of Life, Consciousness and Intelligence</td>
+<td>A Possible Definition of Life, Consciousness and Intelligence</td>
 </tr>
 
 <tr>
+<tr class="paper-row">
 <td style="padding:8px;">09:45</td>
 <td>10:15</td>
 <td>Paper 2</td>
@@ -228,7 +259,7 @@ Workshop Programme
 <td>Revisiting the Upper Modeling Framework: On Meaning and the Preconditions of Modeling</td>
 </tr>
 
-<tr style="background:#fafafa;">
+<tr class="paper-row odd">
 <td style="padding:8px;">10:15</td>
 <td>10:45</td>
 <td>Paper 3</td>
@@ -237,12 +268,13 @@ Workshop Programme
 </tr>
 
 <tr>
+<tr class="break-row">
 <td style="padding:8px;">10:45</td>
 <td>11:20</td>
-<td colspan="3"><strong>Break</strong></td>
+<td colspan="3">Break</td>
 </tr>
 
-<tr style="background:#fafafa;">
+<tr class="paper-row odd">
 <td style="padding:8px;">11:20</td>
 <td>11:50</td>
 <td>Paper 4</td>
@@ -251,6 +283,7 @@ Workshop Programme
 </tr>
 
 <tr>
+<tr class="paper-row">
 <td style="padding:8px;">11:50</td>
 <td>12:20</td>
 <td>Paper 5</td>
@@ -258,13 +291,14 @@ Workshop Programme
 <td>Davidson's Hypothesis and NKRL, the Narrative Knowledge Representation Language</td>
 </tr>
 
-<tr style="background:#fafafa;">
+<tr class="break-row">
 <td style="padding:8px;">12:20</td>
 <td>14:00</td>
-<td colspan="3"><strong>Lunch Break</strong></td>
+<td colspan="3">Lunch Break</td>
 </tr>
 
 <tr>
+<tr class="paper-row odd">
 <td style="padding:8px;">14:00</td>
 <td>14:30</td>
 <td>Paper 6</td>
@@ -272,29 +306,31 @@ Workshop Programme
 <td>Recovering Semantic Structure from Language: LLM Ontology Generation under Representational Pressure</td>
 </tr>
 
-<tr style="background:#fafafa;">
+<tr class="paper-row">
 <td style="padding:8px;">14:30</td>
 <td>15:00</td>
 <td>Paper 7</td>
-<td>David Jakobsen</td>
-<td>From AI Literacy to AI Competence: Truth, Reasoning, and Responsible Use of Generative AI</td>
-</tr>
-
-<tr>
-<td style="padding:8px;">15:00</td>
-<td>15:20</td>
-<td colspan="3"><strong>Break</strong></td>
-</tr>
-
-<tr style="background:#fafafa;">
-<td style="padding:8px;">15:20</td>
-<td>15:50</td>
-<td>Paper 8</td>
 <td>Suzana Stojakovic Celustka</td>
 <td>Integrating Ontologies and Structural Causal Models: A Framework for Explainable and Causally Aware Artificial Intelligence</td>
 </tr>
 
 <tr>
+<tr class="break-row">
+<td style="padding:8px;">15:00</td>
+<td>15:20</td>
+<td colspan="3">Break</td>
+</tr>
+
+<tr class="paper-row odd">
+<td style="padding:8px;">15:20</td>
+<td>15:50</td>
+<td>Paper 8</td>
+<td>David Jakobsen</td>
+<td>From AI Literacy to AI Competence: Truth, Reasoning, and Responsible Use of Generative AI</td>
+</tr>
+
+<tr>
+<tr class="paper-row">
 <td style="padding:8px;">15:50</td>
 <td>16:20</td>
 <td>Paper 9</td>
@@ -303,6 +339,7 @@ Workshop Programme
 </tr>
 
 <tr>
+<tr class="paper-row odd">
 <td style="padding:8px;">16:20</td>
 <td>16:50</td>
 <td>Paper 10</td>
@@ -329,23 +366,9 @@ Community and Tutorial Day
 <table style="width:100%; border-collapse:collapse;">
 <tr>
 <td style="padding:8px; width:180px;">
-<strong>10:50–11:30</strong>
+<strong>11:30–12:30</strong>
 </td>
-<td>Keynote Presentation (Simon Polovina)</td>
-</tr>
-
-<tr>
-<td style="padding:8px;">
-<strong>11:50–12:40</strong>
-</td>
-<td>Ronald Stamper Memorial Session</td>
-</tr>
-
-<tr>
-<td style="padding:8px;">
-<strong>Afternoon</strong>
-</td>
-<td>MOVE Framework Tutorial</td>
+<td>Keynote Presentation on behalf of MOVE (Simon Polovina)</td>
 </tr>
 
 <tr>
@@ -359,11 +382,22 @@ Joint participation with the Organisational Semiotics community
 </table>
 
 <p style="margin-top:15px;margin-bottom:0;">
-Thursday's programme includes a memorial session celebrating the
-contributions of Professor Ronald Stamper (1925–2024), whose work
-influenced Organisational Semiotics and the development of MOVE.
+Thursday's programme includes a tribute to Professor Ronald Stamper (1934–2024), whose work influenced Organisational Semiotics and the development of MOVE.
 </p>
 
+</div>
+
+<div style="
+background:#eef6ff;
+border-left:5px solid #0072c6;
+padding:12px;
+margin:15px 0;">
+<p style="margin:0;">
+For details of the wider conference activities taking place on Thursday, please visit the
+    <a href="https://www.henley.ac.uk/events/informatics-research-centre-irc-conference-2026" target="_blank" rel="noopener noreferrer">
+        Informatics Research Centre (IRC) Conference 2026 programme
+    </a>.
+</p>
 </div>
 
 <h3>Friday 18 September 2026</h3>
@@ -371,12 +405,12 @@ influenced Organisational Semiotics and the development of MOVE.
 <p><strong>Research Presentations</strong></p>
 
 <div style="overflow-x:auto;">
-<table style="width:100%; border-collapse:collapse; min-width:800px;">
+<table class="programme-table">
 <thead>
 <tr style="background:#003366; color:white;">
 <th style="padding:10px; text-align:left;">Start</th>
 <th style="padding:10px; text-align:left;">End</th>
-<th style="padding:10px; text-align:left;">Activity</th>
+<th style="width:60px; white-space:nowrap;">Activity</th>
 <th style="padding:10px; text-align:left;">Presenter</th>
 <th style="padding:10px; text-align:left;">Paper</th>
 </tr>
@@ -384,7 +418,7 @@ influenced Organisational Semiotics and the development of MOVE.
 
 <tbody>
 
-<tr style="background:#fafafa;">
+<tr class="paper-row odd">
 <td style="padding:8px;">09:15</td>
 <td>09:45</td>
 <td>Paper 1</td>
@@ -393,6 +427,7 @@ influenced Organisational Semiotics and the development of MOVE.
 </tr>
 
 <tr>
+<tr class="paper-row">
 <td style="padding:8px;">09:45</td>
 <td>10:15</td>
 <td>Paper 2</td>
@@ -400,7 +435,7 @@ influenced Organisational Semiotics and the development of MOVE.
 <td>ClearTelligence: Self-mentored, Noise-free Thinking, and the Ontology of a Clear Mind</td>
 </tr>
 
-<tr style="background:#fafafa;">
+<tr class="paper-row odd">
 <td style="padding:8px;">10:15</td>
 <td>10:45</td>
 <td>Paper 3</td>
@@ -409,12 +444,13 @@ influenced Organisational Semiotics and the development of MOVE.
 </tr>
 
 <tr>
+<tr class="break-row">
 <td style="padding:8px;">10:45</td>
 <td>11:20</td>
-<td colspan="3"><strong>Break</strong></td>
+<td colspan="3">Break</td>
 </tr>
 
-<tr style="background:#fafafa;">
+<tr class="paper-row">
 <td style="padding:8px;">11:20</td>
 <td>11:50</td>
 <td>Paper 4</td>
@@ -423,6 +459,7 @@ influenced Organisational Semiotics and the development of MOVE.
 </tr>
 
 <tr>
+<tr class="paper-row odd">
 <td style="padding:8px;">11:50</td>
 <td>12:20</td>
 <td>Paper 5</td>
@@ -430,13 +467,13 @@ influenced Organisational Semiotics and the development of MOVE.
 <td>Representing Tacit Operational Knowledge in Industrial Ontologies: A Conceptual Framework</td>
 </tr>
 
-<tr style="background:#fafafa;">
+<tr class="break-row">
 <td style="padding:8px;">12:20</td>
 <td>14:00</td>
-<td colspan="3"><strong>Lunch Break</strong></td>
+<td colspan="3">Lunch Break</td>
 </tr>
 
-<tr style="background:#fafafa;">
+<tr class="paper-row">
 <td style="padding:8px;">14:00</td>
 <td>14:30</td>
 <td>Paper 6</td>
@@ -444,7 +481,7 @@ influenced Organisational Semiotics and the development of MOVE.
 <td>The Agnostic Meaning Substrate (AMS) as an Emergent Ontology of Meaning</td>
 </tr>
 
-<tr style="background:#fafafa;">
+<tr class="paper-row odd">
 <td style="padding:8px;">14:30</td>
 <td>15:00</td>
 <td>Paper 7</td>
@@ -453,12 +490,13 @@ influenced Organisational Semiotics and the development of MOVE.
 </tr>
 
 <tr>
+<tr class="break-row">
 <td style="padding:8px;">15:00</td>
 <td>15:20</td>
-<td colspan="3"><strong>Break</strong></td>
+<td colspan="3">Break</td>
 </tr>
 
-<tr style="background:#fafafa;">
+<tr class="paper-row">
 <td style="padding:8px;">15:20</td>
 <td>15:50</td>
 <td>Paper 8</td>
@@ -467,6 +505,7 @@ influenced Organisational Semiotics and the development of MOVE.
 </tr>
 
 <tr>
+<tr class="paper-row odd">
 <td style="padding:8px;">15:50</td>
 <td>16:20</td>
 <td>Paper 9</td>
@@ -474,7 +513,7 @@ influenced Organisational Semiotics and the development of MOVE.
 <td>Harnessing People, Process, and Applications for Level 5 Business Transformation Management</td>
 </tr>
 
-<tr style="background:#fafafa;">
+<tr class="paper-row">
 <td style="padding:8px;">16:20</td>
 <td>16:50</td>
 <td>Paper 10</td>
@@ -532,7 +571,7 @@ University of Reading Hospitality Venues</a>.
             <strong>Organisers:</strong><br>
             Rubina Polovina — Systems Affairs, Toronto, Canada<br>
 Simon Polovina — Sheffield Hallam University, UK; Simile Logics Limited, Sheffield, UK<br>
-David Jakobson — Aalborg University, Denmark
+David Jakobsen — Aalborg University, Denmark
         </p>
 
         <p><em>On behalf of the MOVE Programme Committee</em></p>
